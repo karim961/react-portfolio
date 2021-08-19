@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Logo from "./components/logo";
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+import { Container } from "./styles/styles";
+import { Col, Row } from "react-styled-flexboxgrid";
+import { Circle1, Circle2, Donut1, Donut2 } from "./styles/shapes";
+import LeftCol from "./components/left-col";
+import RightCol from "./components/right-col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Logo />
+        <Container>
+          <Row>
+            <LeftCol width={4} />
+            <RightCol width={8} />
+          </Row>
+        </Container>
+
+        <Circle1 />
+        <Circle2 />
+        <Donut1 />
+        <Donut2 />
+      </div>
+    </ThemeProvider>
   );
 }
 

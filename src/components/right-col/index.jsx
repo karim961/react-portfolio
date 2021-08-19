@@ -6,6 +6,7 @@ import TopSkill from "../top-skill";
 import { Data } from "../../config/config";
 import ReactMarkdown from "react-markdown";
 import ExperienceTimeline from "../experience-timeline";
+import Expertise from "../expertise";
 
 const RightCol = ({ width = 8 }) => {
   return (
@@ -38,6 +39,14 @@ const RightCol = ({ width = 8 }) => {
           <SectionRow>
             <Col xs={12}>
               <ExperienceTimeline />
+            </Col>
+          </SectionRow>
+        </Col>
+        <Col xs={12}>
+          <H3>{SECTIONS.EXPERTISE}</H3>
+          <SectionRow>
+            <Col xs={12}>
+              <Expertise />
             </Col>
           </SectionRow>
         </Col>

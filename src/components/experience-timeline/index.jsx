@@ -12,7 +12,7 @@ import { Caption, H6 } from "../../styles/text";
 const ExperienceTimeline = () => {
   const theme = useTheme();
   return (
-    <VerticalTimeline>
+    <VerticalTimeline animate={false}>
       {Data.experience &&
         Data.experience.map((xp) => (
           <VerticalTimelineElement
@@ -24,11 +24,12 @@ const ExperienceTimeline = () => {
             iconStyle={{
               background: theme.colors.orange,
               color: theme.colors.white,
-              width: "20px",
-              height: "20px",
-              left: "50%",
-              marginLeft: "-10px",
-              transition: "0.2s",
+              transform: "scale(0.3)",
+              // width: "20px",
+              // height: "20px",
+              // left: "50%",
+              // marginLeft: "-10px",
+              // transition: "0.2s",
             }}
             contentStyle={{
               background: theme.colors.white75,

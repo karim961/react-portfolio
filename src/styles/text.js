@@ -46,6 +46,5 @@ export const Caption = styled.span`
   color: ${(props) => props.theme.colors.primaryGrey};
   font-size: ${(props) => props.theme.fontSizes.caption}rem;
   font-weight: lighter;
-  margin-bottom: 1rem;
   display: inline-block;
 `;

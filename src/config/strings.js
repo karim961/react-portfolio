@@ -3,4 +3,5 @@ export const SECTIONS = {
   TOP_SKILLS: "Top Skills",
   ABOUT: "About me",
   EXPERIENCE: "Experience",
+  EXPERTISE: "Expertise",
 };

@@ -13,6 +13,8 @@ p {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 1rem;
+
 }
 
 a,
@@ -37,14 +39,11 @@ ul ul {
     margin-bottom: 0;
 }
 
-ul {
-    margin-left: 1rem;
-}
 
 dl,
 ol,
 ul {
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 button:focus,

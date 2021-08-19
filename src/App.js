@@ -3,7 +3,7 @@ import Logo from "./components/logo";
 import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
 import { Container } from "./styles/styles";
-import { Col, Row } from "react-styled-flexboxgrid";
+import { Row } from "react-styled-flexboxgrid";
 import { Circle1, Circle2, Donut1, Donut2 } from "./styles/shapes";
 import LeftCol from "./components/left-col";
 import RightCol from "./components/right-col";

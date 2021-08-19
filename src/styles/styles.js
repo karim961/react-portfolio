@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Col, Grid } from "react-styled-flexboxgrid";
+import { Grid } from "react-styled-flexboxgrid";
 
 export const Container = styled(Grid)`
   box-sizing: border-box;

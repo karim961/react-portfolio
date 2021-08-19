@@ -7,7 +7,11 @@ export const Circle1 = styled.div`
   bottom: 14%;
   left: 7%;
   border-radius: 50%;
-  background: linear-gradient(45deg, #ff6542 41%, #ffbcb3 100%);
+  background: linear-gradient(
+    45deg,
+    ${(props) => props.theme.colors.orange} 41%,
+    ${(props) => props.theme.colors.lightOrange} 100%
+  );
   z-index: -1;
 `;
 export const Circle2 = styled.div`
@@ -17,7 +21,11 @@ export const Circle2 = styled.div`
   top: 9%;
   right: 9%;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #20063b, #dc6acf);
+  background: linear-gradient(
+    -45deg,
+    ${(props) => props.theme.colors.darkPurple},
+    ${(props) => props.theme.colors.purple}
+  );
   z-index: -1;
 `;
 export const Donut1 = styled.div`

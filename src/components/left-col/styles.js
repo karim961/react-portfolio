@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Col } from "react-styled-flexboxgrid";
+import { Description, H1 } from "../../styles/text";
 
 export const StyledCol = styled(Col)`
   background: ${(props) => props.theme.colors.white75};
@@ -13,6 +14,16 @@ export const StyledCol = styled(Col)`
   justify-content: flex-start;
   align-self: flex-start;
   height: auto;
+
+  & ${Description} {
+    padding: 0 2rem;
+  }
+
+  & ${H1} {
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ProPic = styled.div`

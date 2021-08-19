@@ -6,6 +6,10 @@ const theme = {
     white25: "rgba(255, 255, 255, 0.25)",
     white75: "rgba(255, 255, 255, 0.75)",
     cyan: "#65C9B8",
+    orange: "#ff6542",
+    lightOrange: "#ffbcb3",
+    purple: "#dc6acf",
+    darkPurple: "#20063b",
     primaryGrey: "#1f1f1f",
   },
 

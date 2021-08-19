@@ -4,113 +4,44 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import reactLogo from "../../assets/react-logo.svg";
 import { useTheme } from "styled-components";
+import ReactMarkdown from "react-markdown";
+import { Data } from "../../config/config";
+import { Caption, H6 } from "../../styles/text";
 
 const ExperienceTimeline = () => {
   const theme = useTheme();
   return (
-    <VerticalTimeline animate={false}>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentArrowStyle={{
-          borderRight: `7px solid  ${theme.colors.white75}`,
-        }}
-        date="2011 - present"
-        iconStyle={{
-          background: "rgb(33, 150, 243)",
-          color: "#fff",
-          transform: "scale(0.3)",
-        }}
-        contentStyle={{
-          background: theme.colors.white75,
-          color: theme.colors.primaryGrey,
-        }}
-      >
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2010 - 2011"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
-        </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2008 - 2010"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2006 - 2008"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          San Francisco, CA
-        </h4>
-        <p>User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="April 2013"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Content Marketing for Web, Mobile and Social Media
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>Strategy, Social Media</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="November 2012"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Agile Development Scrum Master
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>Creative Direction, User Experience, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<reactLogo />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        icon={<reactLogo />}
-      />
+    <VerticalTimeline>
+      {Data.experience &&
+        Data.experience.map((xp) => (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentArrowStyle={{
+              borderRight: `7px solid  ${theme.colors.white75}`,
+            }}
+            date={xp.date}
+            iconStyle={{
+              background: theme.colors.orange,
+              color: theme.colors.white,
+              width: "20px",
+              height: "20px",
+              left: "50%",
+              marginLeft: "-10px",
+              transition: "0.2s",
+            }}
+            contentStyle={{
+              background: theme.colors.white75,
+              color: theme.colors.primaryGrey,
+            }}
+          >
+            <H6 className="vertical-timeline-element-title">{xp.position}</H6>
+            <Caption className="vertical-timeline-element-subtitle">
+              {xp.company}, {xp.location}
+            </Caption>
+            <ReactMarkdown children={xp.description} />
+          </VerticalTimelineElement>
+        ))}
     </VerticalTimeline>
   );
 };

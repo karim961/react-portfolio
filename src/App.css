@@ -27,7 +27,7 @@ button {
 }
 
 li {
-    list-style: none;
+    margin-bottom: 10px;
 }
 
 ol ol,
@@ -38,8 +38,7 @@ ul ul {
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+    margin-left: 1rem;
 }
 
 dl,

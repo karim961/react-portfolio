@@ -4,16 +4,18 @@ import { Description, H1 } from "../../styles/text";
 
 export const StyledCol = styled(Col)`
   background: ${(props) => props.theme.colors.white75};
-  position: sticky;
-  top: 0;
+  padding: 30px;
+
   border-radius: 10px;
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
-  height: auto;
+  & > div {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
   & ${Description} {
     padding: 0 2rem;

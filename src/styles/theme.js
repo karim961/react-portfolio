@@ -6,6 +6,7 @@ const theme = {
     white25: "rgba(255, 255, 255, 0.25)",
     white75: "rgba(255, 255, 255, 0.75)",
     cyan: "#65C9B8",
+    darkBlue: "#07004D",
     orange: "#ff6542",
     lightOrange: "#ffbcb3",
     purple: "#dc6acf",
@@ -15,7 +16,7 @@ const theme = {
 
   fontSizes: {
     regular: 1, // 16px
-    small: 0.875, // 14px
+    caption: 0.875, // 14px
 
     h1: 3, //48px
     h2: 2, // 32px

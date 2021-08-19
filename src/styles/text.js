@@ -18,9 +18,20 @@ export const H3 = styled.h3`
   font-weight: normal;
 `;
 
+export const H4 = styled.h5`
+  color: ${(props) => props.theme.colors.primaryGrey};
+  font-size: ${(props) => props.theme.fontSizes.h4}rem;
+  font-weight: bold;
+`;
+
 export const H5 = styled.h5`
   color: ${(props) => props.theme.colors.primaryGrey};
   font-size: ${(props) => props.theme.fontSizes.h5}rem;
+  font-weight: normal;
+`;
+export const H6 = styled.h6`
+  color: ${(props) => props.theme.colors.primaryGrey};
+  font-size: ${(props) => props.theme.fontSizes.h6}rem;
   font-weight: normal;
 `;
 
@@ -29,4 +40,12 @@ export const Description = styled.p`
   font-size: ${(props) => props.theme.fontSizes.regular}rem;
   font-weight: normal;
   margin-bottom: 1rem;
+`;
+
+export const Caption = styled.span`
+  color: ${(props) => props.theme.colors.primaryGrey};
+  font-size: ${(props) => props.theme.fontSizes.caption}rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  display: inline-block;
 `;

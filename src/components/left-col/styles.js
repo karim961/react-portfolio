@@ -19,12 +19,13 @@ export const StyledCol = styled(Col)`
 
   & ${Description} {
     padding: 0 2rem;
+    margin-bottom: 0.5rem;
   }
 
   & ${H1} {
     padding: 0 2rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1.5rem;
   }
 `;
 

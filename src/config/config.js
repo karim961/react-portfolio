@@ -99,7 +99,10 @@ unreal and unity.
   ],
   expertise: [
     { title: "React", percentage: 90 },
-    { title: "HTML - CSS", percentage: 90 },
+    { title: "HTML - CSS", percentage: 80 },
     { title: "Javascript", percentage: 90 },
+    { title: "React", percentage: 70 },
+    { title: "HTML - CSS", percentage: 77 },
+    { title: "Javascript", percentage: 60 },
   ],
 };

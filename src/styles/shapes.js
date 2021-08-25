@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 const move = keyframes`
   0% {
-    transform: translate(0,0,);
+    transform: translate(0,0);
   }
 
   50%{
@@ -26,7 +26,7 @@ export const Circle1 = styled.div`
     ${(props) => props.theme.colors.lightOrange} 100%
   );
   z-index: -1;
-  animation: 10s ${move} infinite ease-in-out alternate-reverse 2s;
+  animation: 9s ${move} infinite ease-in-out alternate-reverse 2s;
 `;
 export const Circle2 = styled.div`
   position: fixed;

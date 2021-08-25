@@ -1,6 +1,6 @@
 import React from "react";
 import { Logo, StyledTilt, Title } from "./styles";
-import { Description, H3, H5 } from "../../styles/text";
+import { Description, H5 } from "../../styles/text";
 
 const TopSkill = ({ title, description, logo }) => {
   const tiltOptions = {

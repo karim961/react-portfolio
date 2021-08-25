@@ -2,6 +2,7 @@
 
 This project is a work in progress 
 
+https://kind-noether-be4110.netlify.app/
 
 ## Running the project
 

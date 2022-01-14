@@ -1,16 +1,16 @@
-import profilePic from "../assets/profile-pic.jpg";
-import reactLogo from "../assets/react-logo.svg";
-import uiDesign from "../assets/ui-design.svg";
-import unity from "../assets/unity.svg";
+import profilePic from '../assets/profile-pic.jpg';
+import reactLogo from '../assets/react-logo.svg';
+import uiDesign from '../assets/ui-design.svg';
+import unity from '../assets/unity.svg';
 
 export const Data = {
   profile_image: profilePic,
-  name: "Karim Abbas",
-  title: "Software Engineer",
+  name: 'Karim Abbas',
+  title: 'Software Engineer',
   topSkills: [
-    { logo: reactLogo, title: "JavaScript" },
-    { logo: uiDesign, title: "HTML / CSS" },
-    { logo: unity, title: "Unity" },
+    { logo: reactLogo, title: 'JavaScript' },
+    { logo: uiDesign, title: 'HTML / CSS' },
+    { logo: unity, title: 'Unity' },
   ],
   about: `Software Engineer From Lebanon, specializing in Web and Game development. Experienced with all stages of the 
 development cycle for dynamic web projects.\n   
@@ -18,12 +18,28 @@ More than capable of Handling games or interactive projects
 using the Unity Engine. Solid knowledge of the Unreal Engine from materials, blueprints, animation state
 machines, to particles. Well-versed in numerous programming languages including HTML5, JavaScript, PHP 
 OOP, CSS, C#. Strong background in project management and customer relations.`,
+  education: [
+    {
+      institute: 'Lebanese University',
+      degree: 'Professional Masters 2',
+      major: ' Computer Science',
+      date: '2018',
+      address: 'Hadat',
+    },
+    {
+      institute: 'Antonine University',
+      degree: 'Master of Engineering',
+      major: ' Software Engineering',
+      date: '2017',
+      address: 'Baabda',
+    },
+  ],
   experience: [
     {
-      position: "Senior Front-end Engineer",
-      company: "TF961",
-      date: "11/2020 - present",
-      location: "Beirut",
+      position: 'Senior Front-end Engineer',
+      company: 'TF961',
+      date: '11/2020 - present',
+      location: 'Beirut',
       description: `
 - Work on the front-end of a digital transformation project for an international insurance group using 
 React.
@@ -36,10 +52,10 @@ React.
       `,
     },
     {
-      position: "Salesforce Consultant",
-      company: "EI Technologies",
-      date: "07/2019 - 07/2020",
-      location: "Beirut",
+      position: 'Salesforce Consultant',
+      company: 'EI Technologies',
+      date: '07/2019 - 07/2020',
+      location: 'Beirut',
       description: `
 - Work as a part of a team involved in the development of a B2B web portal for a major French clothing
 brand.
@@ -54,10 +70,10 @@ brand.
       `,
     },
     {
-      position: "Web and Game Developer",
-      company: "The Council for Visual affairs",
-      date: "07/2018 - 06/2019",
-      location: "Beirut",
+      position: 'Web and Game Developer',
+      company: 'The Council for Visual affairs',
+      date: '07/2018 - 06/2019',
+      location: 'Beirut',
       description: `
 - Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences.
 - Develop project concepts and maintain optimal workflow.
@@ -70,10 +86,10 @@ process of technological evolution
       `,
     },
     {
-      position: "Game Developer",
-      company: "Game Cooks",
-      date: "03/2017 - 08/2018",
-      location: "Beirut",
+      position: 'Game Developer',
+      company: 'Game Cooks',
+      date: '03/2017 - 08/2018',
+      location: 'Beirut',
       description: `
 - Develop games and simulations using both Unity and Unreal Engines.
 - Write solid code with a focus on performance and memory usage.
@@ -86,10 +102,10 @@ unreal and unity.
       `,
     },
     {
-      position: "Part-time Web Developer",
-      company: "Flip",
-      date: "09/2015 - 01/2017",
-      location: "Beirut",
+      position: 'Part-time Web Developer',
+      company: 'Flip',
+      date: '09/2015 - 01/2017',
+      location: 'Beirut',
       description: `
 - Full-stack Web Development using WordPress, HTML5, CSS3, and JS
 - Code UI/UX design into digital application.
@@ -98,11 +114,17 @@ unreal and unity.
     },
   ],
   expertise: [
-    { title: "React", percentage: 90 },
-    { title: "HTML - CSS", percentage: 80 },
-    { title: "Javascript", percentage: 90 },
-    { title: "React", percentage: 70 },
-    { title: "HTML - CSS", percentage: 77 },
-    { title: "Javascript", percentage: 60 },
+    { title: 'React', percentage: 90 },
+    { title: 'HTML - CSS', percentage: 95 },
+    { title: 'Javascript', percentage: 91 },
+    { title: 'Styled Components', percentage: 95 },
+    { title: 'Jest', percentage: 65 },
+
+    { title: 'Wordpress', percentage: 90 },
+    { title: 'PHP', percentage: 75 },
+    { title: 'C#', percentage: 85 },
+
+    { title: 'Unity', percentage: 85 },
+    { title: 'Unreal', percentage: 65 },
   ],
 };

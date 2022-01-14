@@ -11,6 +11,7 @@ body,
 p {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
+    font-size: 1.1rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 1rem;

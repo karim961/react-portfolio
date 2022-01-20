@@ -1,8 +1,8 @@
-import EducationCol from './styles';
+import EducationContainer from './styles';
 
 const Education = ({ institute, degree, major, date, address }) => {
   return (
-    <EducationCol>
+    <EducationContainer>
       <div>
         <span>{degree}: </span>
         <strong>{major}</strong>
@@ -12,7 +12,7 @@ const Education = ({ institute, degree, major, date, address }) => {
         <strong>{institute}</strong>
         <span>, {address}</span>
       </div>
-    </EducationCol>
+    </EducationContainer>
   );
 };
 

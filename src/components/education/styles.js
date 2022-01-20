@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Col } from 'react-styled-flexboxgrid';
 
-const EducationCol = styled(Col)`
+const EducationContainer = styled.div`
   margin-bottom: 15px;
 `;
-export default EducationCol;
+export default EducationContainer;

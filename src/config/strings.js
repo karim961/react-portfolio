@@ -5,4 +5,6 @@ export const SECTIONS = {
   EXPERIENCE: 'Experience',
   EXPERTISE: 'Expertise',
   EDUCATION: 'Education',
+  PERSONAL_INFO: 'Personal Info',
+  LANGUAGE: 'Language',
 };

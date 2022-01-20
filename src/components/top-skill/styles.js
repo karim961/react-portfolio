@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Tilt from "react-tilt/dist/tilt";
-import { Description } from "../../styles/text";
+import styled from 'styled-components';
+import Tilt from 'react-tilt/dist/tilt';
+import { Description } from '../../styles/text';
 
 export const Logo = styled.div`
   padding: 15px;
@@ -38,6 +38,7 @@ export const StyledTilt = styled(Tilt)`
   border-radius: 10px;
   padding: 15px;
   transition: 0.2s;
+  margin-bottom: 1.5rem;
 
   &:hover {
     box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);

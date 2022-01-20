@@ -12,6 +12,12 @@ export const Data = {
     { logo: uiDesign, title: 'HTML / CSS' },
     { logo: unity, title: 'Unity' },
   ],
+  personalInfo: {},
+  languages: [
+    { title: 'Arabic', percentage: 100 },
+    { title: 'French', percentage: 80 },
+    { title: 'English', percentage: 90 },
+  ],
   about: `Software Engineer From Lebanon, specializing in Web and Game development. Experienced with all stages of the 
 development cycle for dynamic web projects.\n   
 More than capable of Handling games or interactive projects 
@@ -38,7 +44,7 @@ OOP, CSS, C#. Strong background in project management and customer relations.`,
     {
       position: 'Senior Front-end Engineer',
       company: 'TF961',
-      date: '11/2020 - present',
+      date: '11/2020 - 12/2021',
       location: 'Beirut',
       description: `
 - Work on the front-end of a digital transformation project for an international insurance group using 
@@ -116,15 +122,14 @@ unreal and unity.
   expertise: [
     { title: 'React', percentage: 90 },
     { title: 'HTML - CSS', percentage: 95 },
-    { title: 'Javascript', percentage: 91 },
+    { title: 'Javascript', percentage: 92 },
     { title: 'Styled Components', percentage: 95 },
+    { title: 'Next.js', percentage: 70 },
     { title: 'Jest', percentage: 65 },
 
     { title: 'Wordpress', percentage: 90 },
     { title: 'PHP', percentage: 75 },
-    { title: 'C#', percentage: 85 },
-
     { title: 'Unity', percentage: 85 },
-    { title: 'Unreal', percentage: 65 },
+    { title: 'C#', percentage: 85 },
   ],
 };

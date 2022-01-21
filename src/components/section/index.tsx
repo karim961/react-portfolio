@@ -3,7 +3,12 @@ import { H3 } from '../../styles/text';
 import { SectionRow } from '../right-col/styles';
 import { Col } from 'react-styled-flexboxgrid';
 
-const Section = ({ children, title }) => {
+interface SectionProps {
+  title: string;
+  children?: JSX.Element;
+}
+
+const Section = ({ children, title }: SectionProps) => {
   return children ? (
     <Col xs={12}>
       <H3>{title}</H3>

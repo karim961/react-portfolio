@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const H1 = styled.h1`
   color: ${(props) => props.theme.colors.primaryGrey};
@@ -39,7 +39,6 @@ export const Description = styled.p`
   color: ${(props) => props.theme.colors.primaryGrey};
   font-size: ${(props) => props.theme.fontSizes.regular}rem;
   font-weight: normal;
-  margin-bottom: 1rem;
 `;
 
 export const Caption = styled.span`

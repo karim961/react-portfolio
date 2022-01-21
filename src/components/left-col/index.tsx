@@ -49,10 +49,10 @@ const LeftCol = ({ width = 4 }) => {
                         rectBorderRadius="20px"
                         trackPathColor={theme.colors.white75}
                         defColor={{
-                          fair: theme.colors.cyan,
-                          good: theme.colors.cyan,
-                          excellent: theme.colors.cyan,
-                          poor: theme.colors.cyan,
+                          fair: theme.colors.orange,
+                          good: theme.colors.orange,
+                          excellent: theme.colors.orange,
+                          poor: theme.colors.orange,
                         }}
                       />
                     </Col>

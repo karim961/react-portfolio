@@ -1,8 +1,15 @@
-import React from "react";
-import { Logo, StyledTilt, Title } from "./styles";
-import { Description, H5 } from "../../styles/text";
+import React from 'react';
+import { Logo, StyledTilt, Title } from './styles';
+import { Description, H5 } from '../../styles/text';
 
-const TopSkill = ({ title, description, logo }) => {
+interface TopSkillProps {
+  title: string;
+  logo: string;
+
+  description?: string;
+}
+
+const TopSkill = ({ title, description, logo }: TopSkillProps) => {
   const tiltOptions = {
     reverse: true, // reverse the tilt direction
     max: 25, // max tilt rotation (degrees)
@@ -12,7 +19,7 @@ const TopSkill = ({ title, description, logo }) => {
     transition: true, // Set a transition on enter/exit.
     axis: null, // What axis should be disabled. Can be X or Y.
     reset: true, // If the tilt effect has to be reset on exit.
-    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+    easing: 'cubic-bezier(.03,.98,.52,.99)', // Easing on enter/exit.
   };
 
   return (

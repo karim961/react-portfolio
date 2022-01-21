@@ -6,6 +6,12 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.10",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-vertical-timeline-component": "^3.3.1",
+    "@types/styled-components": "^5.1.20",
     "react": "^17.0.1",
     "react-animated-progress-bar": "^1.0.4",
     "react-dom": "^17.0.1",
@@ -15,6 +21,7 @@
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.3.3",
     "styled-components": "^5.3.0",
+    "typescript": "^4.5.5",
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {

@@ -20,12 +20,12 @@ const LeftCol = ({ width = 4 }) => {
   const theme = useTheme();
 
   return (
-    <StyledCol xs={12} sm={width + 2} lg={width}>
+    <StyledCol xs={12} sm={width + 2} md={width + 1} lg={width}>
       <div>
-        <Description>{Data.title}</Description>
-        <H1>{Data.name}</H1>
+        <Description>{Data.personalInfo.title}</Description>
+        <H1>{Data.personalInfo.name}</H1>
         <ProPic>
-          <img src={Data.profile_image} alt={PROFILE_PIC_ALT} />
+          <img src={Data.personalInfo.profile_image} alt={PROFILE_PIC_ALT} />
         </ProPic>
 
         <LanguageCol>
@@ -64,27 +64,33 @@ const LeftCol = ({ width = 4 }) => {
         <PersonalInfoCol>
           <H3>{SECTIONS.PERSONAL_INFO}</H3>
           <section>
-            <a href="tel:+96170640697">
+            <a
+              href={`tel:${Data.personalInfo.phoneNumber?.replace(/\s/g, '')}`}
+            >
               <Icon className="fas fa-phone" />
-              +961 70 640 697
+              {Data.personalInfo.phoneNumber}
             </a>
           </section>
           <section>
-            <a href="mailto:karim.abbas961@gmail.com">
+            <a href={`mailto:${Data.personalInfo.email?.replace(/\s/g, '')}`}>
               <Icon className="fas fa-envelope" />
-              karim.abbas961@gmail.com
+              {Data.personalInfo.email}
             </a>
           </section>
           <section>
-            <Icon className="fas fa-map-marker-alt" /> Beirut, Lebanon
+            <Icon className="fas fa-map-marker-alt" />
+            {Data.personalInfo.address}
           </section>
           <SocialIcons>
-            <a href="#">
-              <Icon className="fab fa-linkedin" />
-            </a>
-            <a href="#">
-              <Icon className="fab fa-github-square" />
-            </a>
+            {Data.personalInfo.socialLinks.length > 0 ? (
+              Data.personalInfo.socialLinks.map((link) => (
+                <a href={link.link}>
+                  <Icon className={link.icon} />
+                </a>
+              ))
+            ) : (
+              <></>
+            )}
           </SocialIcons>
         </PersonalInfoCol>
       </div>

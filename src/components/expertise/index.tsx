@@ -1,10 +1,10 @@
-import React from "react";
-import ProgressBar from "react-animated-progress-bar";
-import { Row } from "react-styled-flexboxgrid";
-import { H6 } from "../../styles/text";
-import { useTheme } from "styled-components";
-import { SkillCol } from "../experience-timeline/styles";
-import { Data } from "../../config/config";
+import React from 'react';
+import ProgressBar from 'react-animated-progress-bar';
+import { Row } from 'react-styled-flexboxgrid';
+import { H6 } from '../../styles/text';
+import { useTheme } from 'styled-components';
+import { SkillCol } from '../experience-timeline/styles';
+import { Data } from '../../config/config';
 
 const Expertise = () => {
   const theme = useTheme();

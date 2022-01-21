@@ -1,6 +1,20 @@
 import EducationContainer from './styles';
 
-const Education = ({ institute, degree, major, date, address }) => {
+interface EducationProps {
+  institute: string;
+  degree: string;
+  major: string;
+  date: string;
+  address: string;
+}
+
+const Education = ({
+  institute,
+  degree,
+  major,
+  date,
+  address,
+}: EducationProps) => {
   return (
     <EducationContainer>
       <div>

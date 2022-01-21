@@ -4,15 +4,29 @@ import uiDesign from '../assets/ui-design.svg';
 import unity from '../assets/unity.svg';
 
 export const Data = {
-  profile_image: profilePic,
-  name: 'Karim Abbas',
-  title: 'Software Engineer',
   topSkills: [
     { logo: reactLogo, title: 'JavaScript' },
     { logo: uiDesign, title: 'HTML / CSS' },
     { logo: unity, title: 'Unity' },
   ],
-  personalInfo: {},
+  personalInfo: {
+    profile_image: profilePic,
+    name: 'Karim Abbas',
+    title: 'Software Engineer',
+    email: 'karim.abbas961@gmail.com',
+    phoneNumber: '+961 70 640 697',
+    address: 'Beirut, Lebanon',
+    socialLinks: [
+      {
+        icon: 'fab fa-linkedin',
+        link: 'https://www.linkedin.com/in/karim-abbas-18409573/',
+      },
+      {
+        icon: 'fab fa-github-square',
+        link: 'https://github.com/karim961',
+      },
+    ],
+  },
   languages: [
     { title: 'Arabic', percentage: 100 },
     { title: 'French', percentage: 80 },
